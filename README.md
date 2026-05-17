@@ -17,7 +17,7 @@ The package is Flutter-first. It does not depend on Riverpod, Provider, Bloc, Ge
 
 ```yaml
 dependencies:
-  app_base_kit: ^0.0.2
+  app_base_kit: ^1.0.4
 ```
 
 Then import:
