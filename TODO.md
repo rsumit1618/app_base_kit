@@ -5,6 +5,7 @@
 - [x] Write complete README.md
 - [x] Update CHANGELOG.md with a real release entry
 - [x] Update example app to demonstrate usage (with and without Riverpod as optional)
-- [ ] Ensure `flutter test`, `flutter analyze`, `dart format .` pass
+- [x] Ensure `flutter test`, targeted `dart analyze`, `dart format .` pass
 - [ ] Run `flutter pub publish --dry-run`
+- [ ] Push to GitHub after the remote repository exists
 

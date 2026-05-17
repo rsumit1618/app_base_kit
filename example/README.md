@@ -1,16 +1,26 @@
-# example
+# app_base_kit example
 
-A new Flutter project.
+This example demonstrates two ways to use `app_base_kit`.
 
-## Getting Started
+## Flutter-First Usage
 
-This project is a starting point for a Flutter application.
+The first tab uses `AppBaseStatefulPage` directly. The page owns a `CounterNoRiverpodViewModel`, calls `load()` from `onModelReady`, and renders `AppBaseState<int>` through a `StreamBuilder`.
 
-A few resources to get you started if this is your first Flutter project:
+## Riverpod Usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The second tab keeps Riverpod in the app layer. `flutter_riverpod` creates and disposes `RiverpodCounterViewModel`, then the UI bridges that model into `AppBaseWidget` with a `ValueNotifier`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This keeps the package neutral while still showing how it fits a Riverpod project.
+
+## Run
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Test
+
+```bash
+flutter test
+```
