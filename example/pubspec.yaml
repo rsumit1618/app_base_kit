@@ -8,7 +8,7 @@ publish_to: 'none' # Example app is not published
 dependencies:
   flutter:
     sdk: flutter
-  app_base_kit:
+  base_app_kit:
     path: ..
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^2.6.1

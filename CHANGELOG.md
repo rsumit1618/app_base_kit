@@ -1,8 +1,9 @@
-## 1.0.4
+## 1.0.0
 
 * Add complete example usage with and without Riverpod.
 * Keep Riverpod out of core package dependencies.
 * Document kickstart comparison and publishing requirements.
+* Publish under the `base_app_kit` package name.
 
 ## 0.0.2
 

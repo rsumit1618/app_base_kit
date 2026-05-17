@@ -1,6 +1,6 @@
 # Publishing Checklist
 
-Use this checklist before publishing `app_base_kit` to pub.dev.
+Use this checklist before publishing `base_app_kit` to pub.dev.
 
 ## Package Metadata
 
@@ -15,7 +15,7 @@ Use this checklist before publishing `app_base_kit` to pub.dev.
 
 - Core package dependencies stay minimal. Riverpod belongs in the example app only.
 - Do not include app-specific routing, network clients, storage, DI containers, generated files, secrets, or private assets.
-- Keep the public export file at `lib/app_base_kit.dart` aligned with the intended API surface.
+- Keep the public export file at `lib/base_app_kit.dart` aligned with the intended API surface.
 
 ## Local Verification
 

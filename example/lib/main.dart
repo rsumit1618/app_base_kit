@@ -1,4 +1,4 @@
-import 'package:app_base_kit/app_base_kit.dart';
+import 'package:base_app_kit/base_app_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -14,7 +14,7 @@ class ExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'app_base_kit example',
+      title: 'base_app_kit example',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
       ),
@@ -32,7 +32,7 @@ class ExampleHomePage extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('app_base_kit examples'),
+          title: const Text('base_app_kit examples'),
           bottom: const TabBar(
             tabs: [
               Tab(text: 'No Riverpod'),
@@ -43,10 +43,7 @@ class ExampleHomePage extends StatelessWidget {
         body: const TabBarView(
           children: [
             _NonRiverpodSection(),
-            Padding(
-              padding: EdgeInsets.all(16),
-              child: RiverpodCounterDemo(),
-            ),
+            Padding(padding: EdgeInsets.all(16), child: RiverpodCounterDemo()),
           ],
         ),
       ),
@@ -63,19 +60,13 @@ class _SectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-      child: Text(
-        title,
-        style: Theme.of(context).textTheme.titleMedium,
-      ),
+      child: Text(title, style: Theme.of(context).textTheme.titleMedium),
     );
   }
 }
 
 class _ExampleSection extends StatelessWidget {
-  const _ExampleSection({
-    required this.title,
-    required this.child,
-  });
+  const _ExampleSection({required this.title, required this.child});
 
   final String title;
   final Widget child;
@@ -85,10 +76,7 @@ class _ExampleSection extends StatelessWidget {
     return ListView(
       children: [
         _SectionHeader(title: title),
-        Padding(
-          padding: const EdgeInsets.all(16),
-          child: child,
-        ),
+        Padding(padding: const EdgeInsets.all(16), child: child),
       ],
     );
   }

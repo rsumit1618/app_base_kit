@@ -1,6 +1,6 @@
-# app_base_kit example
+# base_app_kit example
 
-This example demonstrates two ways to use `app_base_kit`.
+This example demonstrates two ways to use `base_app_kit`.
 
 ## Flutter-First Usage
 

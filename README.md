@@ -1,6 +1,6 @@
-# app_base_kit
+# base_app_kit
 
-`app_base_kit` is a lightweight Flutter package for the base layer that many projects repeat: view-model state, lifecycle wiring, scaffold/page shells, result objects, use cases, and pagination state.
+`base_app_kit` is a lightweight Flutter package for the base layer that many projects repeat: view-model state, lifecycle wiring, scaffold/page shells, result objects, use cases, and pagination state.
 
 The package is Flutter-first. It does not depend on Riverpod, Provider, Bloc, GetX, or any project-specific service locator. You can use it directly, or bridge it into your preferred state-management package from the app layer.
 
@@ -17,13 +17,13 @@ The package is Flutter-first. It does not depend on Riverpod, Provider, Bloc, Ge
 
 ```yaml
 dependencies:
-  app_base_kit: ^1.0.4
+  base_app_kit: ^1.0.0
 ```
 
 Then import:
 
 ```dart
-import 'package:app_base_kit/app_base_kit.dart';
+import 'package:base_app_kit/base_app_kit.dart';
 ```
 
 ## Usage Without Riverpod
@@ -133,7 +133,7 @@ See the runnable app in [`example/`](example/) for full no-Riverpod and Riverpod
 
 This package is intended to extract the reusable base dependencies from a kickstart/starter project without forcing the starter project's full stack onto every app.
 
-| Kickstart concern | In a full project kickstart | In `app_base_kit` |
+| Kickstart concern | In a full project kickstart | In `base_app_kit` |
 | --- | --- | --- |
 | Base VM state | Usually copied into each app | Provided as `AppBaseState` and `AppBaseViewModel` |
 | Page lifecycle | Often tied to a chosen state manager | Provided through `AppBaseWidget` and `AppBaseStatefulPage` |
@@ -143,7 +143,7 @@ This package is intended to extract the reusable base dependencies from a kickst
 | State management | Kickstart may choose Riverpod/Bloc/GetX | Package stays neutral; apps add their own integration |
 | App-specific services | Usually includes routing, DI, network, storage | Intentionally excluded from this package |
 
-Use `app_base_kit` when you want the architecture base from a kickstart but still want each app to choose its own routing, dependency injection, networking, storage, and state-management tools.
+Use `base_app_kit` when you want the architecture base from a kickstart but still want each app to choose its own routing, dependency injection, networking, storage, and state-management tools.
 
 ## Publish Requirements
 

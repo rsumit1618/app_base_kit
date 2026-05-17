@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('renders both app_base_kit counter examples', (tester) async {
+  testWidgets('renders both base_app_kit counter examples', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: ExampleApp()));
     await tester.pump(const Duration(milliseconds: 300));
 
